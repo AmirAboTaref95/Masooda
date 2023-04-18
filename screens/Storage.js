@@ -4,7 +4,8 @@ import React from "react";
 const Storage = () => {
   return (
     <View>
-      <Text>Storage</Text>
+      <Text>Manage Inventory</Text>
+      
     </View>
   );
 };
