@@ -1,4 +1,4 @@
-import heart from "../assets/icons/heart.png";
+import heart from "../assets/Icons/heart.png";
 
 export default {
   heart,
