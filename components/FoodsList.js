@@ -33,7 +33,6 @@ const FoodsList = () => {
 export default FoodsList;
 
 const styles = StyleSheet.create({
-  container: {},
   cardsContainer: {
     alignItems: "center",
   },

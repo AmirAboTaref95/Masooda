@@ -8,6 +8,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import { Home, Profile, Recipes, Storage, Suppliers } from "./screens";
 
+import assets from "./constants/assets";
+
 export default function App() {
   const Stack = createNativeStackNavigator();
   const Tab = createBottomTabNavigator();
@@ -20,6 +22,7 @@ export default function App() {
             headerStyle: {
               backgroundColor: "#fff",
             },
+            tabBarIcon: assets.heart,
             headerTintColor: "black",
             headerTitleStyle: {
               fontWeight: "bold",

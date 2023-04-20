@@ -5,7 +5,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 const BtnAddStorage = () => {
   return (
     <View style={styles.BtnAddStorage}>
-      <TouchableOpacity style={styles.btn} onPress={() => AddStorage()}>
+      <TouchableOpacity style={styles.btn}>
         <Text style={styles.text}>+ Add Storage Unit</Text>
       </TouchableOpacity>
     </View>
