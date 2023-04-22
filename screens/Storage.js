@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { BtnAddStorage, FoodsList } from "../components";
+import { Button, FoodsList } from "../components";
 
 const Storage = () => {
   return (
@@ -21,8 +21,12 @@ const Storage = () => {
           Manage Inventory
         </Text>
       </View>
-      <FoodsList />
-      <BtnAddStorage />
+      <View>
+        <FoodsList />
+      </View>
+      <View style={{ alignItems: "center", paddingTop: 35 }}>
+        <Button children={"+ Add Storage Unit"} />
+      </View>
     </View>
   );
 };

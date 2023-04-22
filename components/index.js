@@ -1,4 +1,4 @@
-import BtnAddStorage from "./BtnAddStorage";
+import Button from "./Button";
 import FoodsList from "./FoodsList";
 
-export { BtnAddStorage, FoodsList };
+export { Button, FoodsList };

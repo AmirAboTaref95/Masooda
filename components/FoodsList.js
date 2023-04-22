@@ -3,31 +3,33 @@ import React from "react";
 import { StorageData } from "../constants/storageData";
 
 const FoodsList = () => {
-  return (
-    <View style={styles.container}>
-      {StorageData.map((item) => {
-        return (
-          <View key={item.id} style={styles.cardsContainer}>
-            <View style={styles.card}>
-              <View style={{ display: "flex", flexDirection: "row" }}>
-                <Image source={item.icon} />
-                <View>
-                  <Text style={styles.foodName}>{item.foodName}</Text>
-                  <Text style={{ color: "#aa2343", fontWeight: "bold" }}>
-                    {item.cookingLevel}
-                  </Text>
-                  <Text style={styles}>{item.description}</Text>
-                </View>
-              </View>
-              <View>
-                <Image source={item.icon} />
-              </View>
+  return StorageData.map((item) => {
+    return (
+      <View key={item.id} style={styles.cardsContainer}>
+        <View style={styles.card}>
+          <View
+            style={{ display: "flex", flexDirection: "row", paddingStart: 40 }}
+          >
+            <Image source={item.icon} />
+            <View>
+              <Text style={styles.foodName}>{item.foodName}</Text>
+              <Text style={{ color: "#aa2343", fontWeight: "bold" }}>
+                {item.cookingLevel}
+              </Text>
+              <Text style={styles}>{item.description}</Text>
             </View>
           </View>
-        );
-      })}
-    </View>
-  );
+          <View style={{ paddingHorizontal: 50 }}>
+            <Image
+              source={require("../assets/Icons/east_FILL0_wght400_GRAD0_opsz48.png")}
+              resizeMode="contain"
+              style={{ width: 25, tintColor: "#000000", paddingEnd: 10 }}
+            />
+          </View>
+        </View>
+      </View>
+    );
+  });
 };
 
 export default FoodsList;
@@ -47,7 +49,6 @@ const styles = StyleSheet.create({
     overflow: "scroll",
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-between",
     alignItems: "center",
   },
   foodName: {
