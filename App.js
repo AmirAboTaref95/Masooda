@@ -15,7 +15,18 @@ export default function App() {
   const Tab = createBottomTabNavigator();
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          tabBarShowLabel: false,
+          tabBarHideOnKeyboard: true,
+          headerStyle: {
+            height: 104,
+          },
+          footerStyle: {
+            height: 100,
+          },
+        }}
+      >
         <Tab.Screen
           name="Home"
           component={Home}
@@ -26,7 +37,17 @@ export default function App() {
                   <Image
                     source={require("./assets/Icons/home_FILL0_wght400_GRAD0_opsz48.png")}
                     resizeMode="contain"
-                    style={{ width: 25, tintColor: "#000000" }}
+                    style={{
+                      width: 57,
+                      height: 44,
+                      paddingBottom: 15,
+                      paddingTop: 15,
+                      paddingEnd: 15,
+                      paddingStart: 15,
+                      backgroundColor: focused ? "#EDBABC" : null,
+                      tintColor: "#000000",
+                      borderRadius: 18,
+                    }}
                   />
                 </View>
               );
@@ -43,7 +64,17 @@ export default function App() {
                   <Image
                     source={require("./assets/Icons/shelves_FILL0_wght400_GRAD0_opsz48.png")}
                     resizeMode="contain"
-                    style={{ width: 25, tintColor: "#000000" }}
+                    style={{
+                      width: 57,
+                      height: 44,
+                      paddingBottom: 15,
+                      paddingTop: 15,
+                      paddingEnd: 15,
+                      paddingStart: 15,
+                      backgroundColor: focused ? "#EDBABC" : null,
+                      tintColor: "#000000",
+                      borderRadius: 18,
+                    }}
                   />
                 </View>
               );
@@ -60,7 +91,17 @@ export default function App() {
                   <Image
                     source={require("./assets/Icons/food_bank_FILL0_wght400_GRAD0_opsz48.png")}
                     resizeMode="contain"
-                    style={{ width: 25, tintColor: "#000000" }}
+                    style={{
+                      width: 57,
+                      height: 44,
+                      paddingBottom: 15,
+                      paddingTop: 15,
+                      paddingEnd: 15,
+                      paddingStart: 15,
+                      backgroundColor: focused ? "#EDBABC" : null,
+                      tintColor: "#000000",
+                      borderRadius: 18,
+                    }}
                   />
                 </View>
               );
@@ -77,7 +118,17 @@ export default function App() {
                   <Image
                     source={require("./assets/Icons/storefront_FILL0_wght400_GRAD0_opsz48.png")}
                     resizeMode="contain"
-                    style={{ width: 25, tintColor: "#000000" }}
+                    style={{
+                      width: 57,
+                      height: 44,
+                      paddingBottom: 15,
+                      paddingTop: 15,
+                      paddingEnd: 15,
+                      paddingStart: 15,
+                      backgroundColor: focused ? "#EDBABC" : null,
+                      tintColor: "#000000",
+                      borderRadius: 18,
+                    }}
                   />
                 </View>
               );
@@ -94,12 +145,21 @@ export default function App() {
                   <Image
                     source={require("./assets/Icons/person_FILL0_wght400_GRAD0_opsz48.png")}
                     resizeMode="contain"
-                    style={{ width: 25, tintColor: "#000000" }}
+                    style={{
+                      width: 57,
+                      height: 44,
+                      paddingBottom: 15,
+                      paddingTop: 15,
+                      paddingEnd: 15,
+                      paddingStart: 15,
+                      backgroundColor: focused ? "#EDBABC" : null,
+                      tintColor: "#000000",
+                      borderRadius: 18,
+                    }}
                   />
                 </View>
               );
             },
-            tabBarIconStyle: {},
           }}
         />
       </Tab.Navigator>

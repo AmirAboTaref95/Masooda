@@ -14,23 +14,20 @@ export default Button;
 
 const styles = {
   textStyle: {
-    alignSelf: "center",
-    color: "#FFFFFF",
-    fontSize: 16,
     fontWeight: "bold",
-    paddingTop: 10,
-    paddingBottom: 10,
+    fontSize: 20,
+    color: "#FFFFFF",
+    alignSelf: "center",
   },
   buttonStyle: {
     backgroundColor: "#C3001F",
     borderWidth: 1,
     borderColor: "#C3001F",
-    paddingTop: 4,
-    paddingBottom: 4,
-    paddingRight: 10,
-    paddingLeft: 10,
-    marginTop: 10,
-    width: 220,
+    paddingTop: 15,
+    paddingBottom: 15,
+    paddingRight: 15,
+    paddingLeft: 15,
+    width: 248,
     borderRadius: 15,
   },
 };

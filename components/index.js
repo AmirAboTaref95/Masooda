@@ -1,4 +1,4 @@
 import Button from "./Button";
-import FoodsList from "./FoodsList";
+import FoodsList from "./StorageUnitCard";
 
 export { Button, FoodsList };
