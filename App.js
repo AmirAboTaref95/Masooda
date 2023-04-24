@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { View, Image } from "react-native";
+import { View, Image, StyleSheet } from "react-native";
 
 import { NavigationContainer } from "@react-navigation/native";
 
@@ -37,17 +37,7 @@ export default function App() {
                   <Image
                     source={require("./assets/Icons/home_FILL0_wght400_GRAD0_opsz48.png")}
                     resizeMode="contain"
-                    style={{
-                      width: 57,
-                      height: 44,
-                      paddingBottom: 15,
-                      paddingTop: 15,
-                      paddingEnd: 15,
-                      paddingStart: 15,
-                      backgroundColor: focused ? "#EDBABC" : null,
-                      tintColor: "#000000",
-                      borderRadius: 18,
-                    }}
+                    style={styles.image}
                   />
                 </View>
               );
@@ -64,17 +54,7 @@ export default function App() {
                   <Image
                     source={require("./assets/Icons/shelves_FILL0_wght400_GRAD0_opsz48.png")}
                     resizeMode="contain"
-                    style={{
-                      width: 57,
-                      height: 44,
-                      paddingBottom: 15,
-                      paddingTop: 15,
-                      paddingEnd: 15,
-                      paddingStart: 15,
-                      backgroundColor: focused ? "#EDBABC" : null,
-                      tintColor: "#000000",
-                      borderRadius: 18,
-                    }}
+                    style={styles.image}
                   />
                 </View>
               );
@@ -91,17 +71,7 @@ export default function App() {
                   <Image
                     source={require("./assets/Icons/food_bank_FILL0_wght400_GRAD0_opsz48.png")}
                     resizeMode="contain"
-                    style={{
-                      width: 57,
-                      height: 44,
-                      paddingBottom: 15,
-                      paddingTop: 15,
-                      paddingEnd: 15,
-                      paddingStart: 15,
-                      backgroundColor: focused ? "#EDBABC" : null,
-                      tintColor: "#000000",
-                      borderRadius: 18,
-                    }}
+                    style={styles.image}
                   />
                 </View>
               );
@@ -118,17 +88,7 @@ export default function App() {
                   <Image
                     source={require("./assets/Icons/storefront_FILL0_wght400_GRAD0_opsz48.png")}
                     resizeMode="contain"
-                    style={{
-                      width: 57,
-                      height: 44,
-                      paddingBottom: 15,
-                      paddingTop: 15,
-                      paddingEnd: 15,
-                      paddingStart: 15,
-                      backgroundColor: focused ? "#EDBABC" : null,
-                      tintColor: "#000000",
-                      borderRadius: 18,
-                    }}
+                    style={styles.image}
                   />
                 </View>
               );
@@ -145,17 +105,7 @@ export default function App() {
                   <Image
                     source={require("./assets/Icons/person_FILL0_wght400_GRAD0_opsz48.png")}
                     resizeMode="contain"
-                    style={{
-                      width: 57,
-                      height: 44,
-                      paddingBottom: 15,
-                      paddingTop: 15,
-                      paddingEnd: 15,
-                      paddingStart: 15,
-                      backgroundColor: focused ? "#EDBABC" : null,
-                      tintColor: "#000000",
-                      borderRadius: 18,
-                    }}
+                    style={styles.image}
                   />
                 </View>
               );
@@ -166,3 +116,18 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+const styles = (focused) =>
+  StyleSheet.create({
+    image: {
+      width: 57,
+      height: 44,
+      paddingBottom: 15,
+      paddingTop: 15,
+      paddingEnd: 15,
+      paddingStart: 15,
+      backgroundColor: focused ? "#EDBABC" : null,
+      tintColor: "#000000",
+      borderRadius: 18,
+    },
+  });
